@@ -14,3 +14,7 @@ pip install act-admin
 ```bash
 act-types --object-types-file object-types-imc.json --fact-types-file fact-types-imc.json --meta-fact-types-file meta-fact-types-imc.json --act-baseurl http://localhost:8888 --user-id 1 --add
 ```
+
+## About
+
+The Adversary Emulation Planner is developed in the SOCCRATES innovation project (<https://soccrates.eu>). SOCCRATES has received funding from the European Union’s Horizon 2020 Research and Innovation program under Grant Agreement No. 833481.
