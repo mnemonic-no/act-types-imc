@@ -1,0 +1,9 @@
+[
+  {
+    "name": "observationTime",
+    "validator": "^[0-9]+$"
+  },
+  {
+    "name": "isInherited"
+  }
+]

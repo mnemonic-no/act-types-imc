@@ -1,0 +1,416 @@
+[
+  {
+    "name": "action",
+    "objectBindings": [
+      {
+        "sourceObjectType": "rule"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "adminOf",
+    "objectBindings": [
+      {
+        "destinationObjectType": "host",
+        "sourceObjectType": ["group", "user"]
+      }
+    ]
+  },
+  {
+    "name": "affects",
+    "objectBindings": [
+      {
+        "destinationObjectType": "software",
+        "sourceObjectType": "vulnerability"
+      }
+    ]
+  },
+  {
+    "name": "applicationProtocol",
+    "objectBindings": [
+      {
+        "sourceObjectType": "rule"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "assignedTo",
+    "objectBindings": [
+      {
+        "destinationObjectType": "host",
+        "sourceObjectType": "ipv4"
+      }
+    ]
+  },
+  {
+    "name": "availabilityImpact",
+    "objectBindings": [
+      {
+        "sourceObjectType": [
+          "host"
+        ]
+      }
+    ],
+    "validator": "^[1-5]$"
+  },
+  {
+    "name": "bytesIn",
+    "objectBindings": [
+      {
+        "sourceObjectType": "dataFlow"
+      }
+    ],
+    "validator": "^[0-9]+$"
+  },
+  {
+    "name": "bytesOut",
+    "objectBindings": [
+      {
+        "sourceObjectType": "dataFlow"
+      }
+    ],
+    "validator": "^[0-9]+$"
+  },
+  {
+    "name": "category",
+    "objectBindings": [
+      {
+        "sourceObjectType": [
+          "host",
+          "software",
+          "ipv4"
+        ]
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "componentOf",
+    "objectBindings": [
+      {
+        "destinationObjectType": "ruleSet",
+        "sourceObjectType": "rule"
+      }
+    ]
+  },
+  {
+    "name": "confidentialityImpact",
+    "objectBindings": [
+      {
+        "sourceObjectType": [
+          "host"
+        ]
+      }
+    ],
+    "validator": "^[1-5]$"
+  },
+  {
+    "name": "configuredOn",
+    "objectBindings": [
+      {
+        "destinationObjectType": "host",
+        "sourceObjectType": "ruleSet"
+      }
+    ]
+  },
+  {
+    "name": "defaultPolicy",
+    "objectBindings": [
+      {
+        "sourceObjectType": "ruleSet"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "destination",
+    "objectBindings": [
+      {
+        "destinationObjectType": "ipv4",
+        "sourceObjectType": "dataFlow"
+      }
+    ]
+  },
+  {
+    "name": "destinationNet",
+    "objectBindings": [
+      {
+        "sourceObjectType": "rule"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "distinguishedName",
+    "objectBindings": [
+      {
+        "sourceObjectType": [
+          "domain",
+          "group",
+          "host",
+          "organizationalUnit",
+          "user"
+        ]
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "follows",
+    "objectBindings": [
+      {
+        "destinationObjectType": "rule",
+        "sourceObjectType": "rule"
+      }
+    ]
+  },
+  {
+    "name": "hasRight",
+    "objectBindings": [
+      {
+        "destinationObjectType": [
+          "domain",
+          "group",
+          "host",
+          "organizationalUnit",
+          "user"
+        ],
+        "sourceObjectType": ["host", "group", "user"]
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "highDestinationPort",
+    "objectBindings": [
+      {
+        "sourceObjectType": "rule"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "highSourcePort",
+    "objectBindings": [
+      {
+        "sourceObjectType": "rule"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "highValue",
+    "objectBindings": [
+      {
+        "sourceObjectType": [
+          "domain",
+          "group",
+          "host",
+          "organizationalUnit",
+          "user"
+        ]
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "integrityImpact",
+    "objectBindings": [
+      {
+        "sourceObjectType": [
+	      "host"
+	  ]
+      }
+    ],
+    "validator": "^[1-5]$"
+  },
+  {
+    "name": "interface",
+    "objectBindings": [
+      {
+        "destinationObjectType": "ipv4",
+        "sourceObjectType": "route"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "isAdmin",
+    "objectBindings": [
+      {
+          "sourceObjectType": [
+	      "group",
+	      "user"
+	  ]
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "listensOn",
+    "objectBindings": [
+      {
+        "destinationObjectType": "ipv4",
+        "sourceObjectType": "software"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "lowDestinationPort",
+    "objectBindings": [
+      {
+        "sourceObjectType": "rule"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "lowSourcePort",
+    "objectBindings": [
+      {
+        "sourceObjectType": "rule"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "matchStrategy",
+    "objectBindings": [
+      {
+        "sourceObjectType": "ruleSet"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "memberOf",
+    "objectBindings": [
+      {
+        "destinationObjectType": [
+          "ipv4Network",
+          "group",
+          "organizationalUnit",
+          "domain"
+        ],
+        "sourceObjectType": [
+          "host",
+          "ipv4",
+          "user",
+          "group",
+          "organizationalUnit"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "metric",
+    "objectBindings": [
+      {
+        "sourceObjectType": "route"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "name",
+    "objectBindings": [
+      {
+        "sourceObjectType": "host"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "nextHop",
+    "objectBindings": [
+      {
+        "destinationObjectType": "ipv4",
+        "sourceObjectType": "route"
+      }
+    ]
+  },
+  {
+    "name": "protocol",
+    "objectBindings": [
+      {
+        "sourceObjectType": "rule"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "protocolState",
+    "objectBindings": [
+      {
+        "sourceObjectType": "rule"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "routesTo",
+    "objectBindings": [
+      {
+        "destinationObjectType": "ipv4Network",
+        "sourceObjectType": "route"
+      }
+    ]
+  },
+  {
+    "name": "runs",
+    "objectBindings": [
+      {
+        "destinationObjectType": "software",
+        "sourceObjectType": "host"
+      }
+    ]
+  },
+  {
+    "name": "score",
+    "objectBindings": [
+      {
+        "sourceObjectType": "vulnerability"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "sessionTo",
+    "objectBindings": [
+      {
+        "destinationObjectType": "host",
+        "sourceObjectType": "user"
+      }
+    ]
+  },
+  {
+    "name": "source",
+    "objectBindings": [
+      {
+        "destinationObjectType": "ipv4",
+        "sourceObjectType": "dataFlow"
+      }
+    ]
+  },
+  {
+    "name": "sourceNet",
+    "objectBindings": [
+      {
+        "sourceObjectType": "rule"
+      }
+    ],
+    "validator": "(.|\\n)+"
+  },
+  {
+    "name": "trusts",
+    "objectBindings": [
+      {
+        "destinationObjectType": "domain",
+        "sourceObjectType": "domain"
+      }
+    ]
+  }
+]
