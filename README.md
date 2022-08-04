@@ -17,4 +17,4 @@ act-types --object-types-file object-types-imc.json --fact-types-file fact-types
 
 ## About
 
-The Adversary Emulation Planner is developed in the SOCCRATES innovation project (<https://soccrates.eu>). SOCCRATES has received funding from the European Union’s Horizon 2020 Research and Innovation program under Grant Agreement No. 833481.
+The IMC type definitions is developed in the SOCCRATES innovation project (<https://soccrates.eu>). SOCCRATES has received funding from the European Union’s Horizon 2020 Research and Innovation program under Grant Agreement No. 833481.
